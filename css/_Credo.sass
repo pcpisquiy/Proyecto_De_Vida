@@ -1,0 +1,29 @@
+.credo
+    width: 100vw
+    height: 100vh
+    background-image: url('../Assets/img/JesusNazareno.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    display: flex
+    flex-direction: column
+    align-items: end
+    padding-right: 50px
+.Credo_Container
+    width: 50vw
+.Titulo_Credo
+    align-self: center
+    font-family: $titulos
+    font-size: 60px
+    color: gray
+    text-align: center
+.Descripcion_Credo
+    font-family: $Descripciones
+    font-size: 40px
+@media screen and (max-width:480px) 
+    .credo
+        background-position: center
+        align-items: center
+        padding-right: 0
+    .Credo_Container
+        width: 100vw  
+    .Descripcion_Credo

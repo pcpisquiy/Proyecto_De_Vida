@@ -1,0 +1,51 @@
+.Mision
+    width: 100vw
+    height: 100vh
+    background-image: url("../Assets/img/Termosfera2.jpg")
+    background-size: cover
+    background-repeat: no-repeat
+.card_container
+    display: flex
+    align-items: center
+    justify-content: center
+.card
+    background-color: rgba(white,0.9)
+    width: 40vw
+    height: 530px
+    margin-left: 5vw
+    margin-right: 5vw
+    border: 5px outset black
+    padding-left: 40px 
+    padding-right: 40px 
+    padding-top: 30px 
+    border-top-left-radius: 20%
+    border-bottom-right-radius: 20%
+.card:first-child
+     border: 5px inset black
+.card_header
+    text-align: center
+    font-family: $titulos
+    color: $color_titulos
+    font-size: 50px
+    border-bottom: 3px dashed black
+.card_body
+    padding: 20px
+.card_description 
+    text-align: center
+    font-family: $Descripciones
+    font-size: 30px
+    text-align: justify
+.card:hover
+    box-shadow: 2px 2px 2px 5px  blue, -2px -2px 2px 5px  red
+@media screen  and (max-width:480px) 
+    .card_container
+        flex-direction: column
+    .card
+        width: 90vw
+        height: 300px
+        padding-left: 15px 
+        padding-right: 15px 
+    .card_header
+        font-size: 20px
+    .card_description 
+        font-size: 15px
