@@ -31,6 +31,11 @@ hr {
   font-family: 'AC_BC';
 }
 
+@font-face {
+  src: url("../Assets/Fonts/pamela/pamela.ttf");
+  font-family: 'Pamela';
+}
+
 .Caratula {
   overflow: hidden;
   height: 100vh;
@@ -159,7 +164,7 @@ hr {
 .card_description {
   text-align: center;
   font-family: "AC_BC", Arial;
-  font-size: 30px;
+  font-size: 28px;
   text-align: justify;
 }
 
@@ -192,8 +197,9 @@ hr {
 .credo {
   width: 100vw;
   height: 100vh;
-  background-image: url("../Assets/img/JesusNazareno.jpg");
+  background-image: url("../Assets/img/Jesus_Nazareno.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -223,13 +229,15 @@ hr {
 }
 
 .Descripcion_Credo {
-  font-family: "AC_BC", Arial;
+  color: white;
+  font-family: "Pamela", "Arial";
   font-size: 40px;
+  text-align: center;
 }
 
 @media screen and (max-width: 480px) {
   .credo {
-    background-position: center;
+    background-position: left;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -238,5 +246,29 @@ hr {
   .Credo_Container {
     width: 100vw;
   }
+  .Descripcion_Credo {
+    font-size: 25px;
+    color: white;
+    -webkit-text-stroke: 1px none;
+  }
+}
+
+.Principio_Fundamento {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../Assets/img/Amor_a_Dios.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  padding-right: 50px;
 }
 /*# sourceMappingURL=index.css.map */

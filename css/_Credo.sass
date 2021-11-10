@@ -1,8 +1,9 @@
 .credo
     width: 100vw
     height: 100vh
-    background-image: url('../Assets/img/JesusNazareno.jpg')
+    background-image: url('../Assets/img/Jesus_Nazareno.jpg')
     background-size: cover
+    background-position: center
     background-repeat: no-repeat
     display: flex
     flex-direction: column
@@ -17,13 +18,18 @@
     color: gray
     text-align: center
 .Descripcion_Credo
-    font-family: $Descripciones
+    color: white
+    font-family: $Credo
     font-size: 40px
+    text-align: center
 @media screen and (max-width:480px) 
     .credo
-        background-position: center
+        background-position: left
         align-items: center
         padding-right: 0
     .Credo_Container
         width: 100vw  
     .Descripcion_Credo
+        font-size: 25px
+        color: white
+        -webkit-text-stroke: 1px none
