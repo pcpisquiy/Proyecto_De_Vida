@@ -36,6 +36,16 @@ hr {
   font-family: 'Pamela';
 }
 
+@font-face {
+  src: url("../Assets/Fonts/jmh_typewriter/JMH_Typewriter-Thin.ttf");
+  font-family: 'typewiter';
+}
+
+@font-face {
+  src: url("../Assets/Fonts/veteran_typewriter/veteran_typewriter.ttf");
+  font-family: 'veteran_typewriter';
+}
+
 .Caratula {
   overflow: hidden;
   height: 100vh;
@@ -266,9 +276,23 @@ hr {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
   padding-right: 50px;
+}
+
+.Principio_Fundamento_Container {
+  padding: 20px;
+  width: 45vw;
+  text-align: center;
+  font-family: 'veteran_typewriter';
+  font-size: 35px;
+}
+
+.Descripcion {
+  font-size: 25px;
+  color: black;
+  font-family: 'typewiter';
 }
 /*# sourceMappingURL=index.css.map */
