@@ -1,0 +1,91 @@
+.Foda
+    width: 100vw
+    height: 100vh
+    display: flex
+    align-items: center
+    justify-content: center
+    background-color: #eeedeb
+    flex-direction: row
+.foda_container
+    display: flex
+    flex-direction: row
+.Letter-container
+    margin: 2rem
+    overflow-x: hidden
+.img-Letra
+    height: 17rem
+    width: 15rem
+.img-Letra:active 
+    transform: scale(0.80)
+//modal
+button 
+  margin: 20px 
+  background-color: #6e0505
+  border: 0
+  border-radius: 5px
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+  color: #fff
+  font-size: 14px
+  padding: 10px 25px
+
+
+.modal-container 
+  display: flex
+  background-color: rgba(0, 0, 0, 0.3)
+  align-items: center
+  justify-content: center
+  position: fixed
+  pointer-events: none
+  opacity: 0  
+  top: 0
+  left: 0
+  height: 100vh
+  width: 100vw
+  transition: opacity 0.3s ease
+
+
+.show 
+  pointer-events: auto
+  opacity: 1
+
+
+.modal 
+  background-color: #fff
+  width: 600px
+  max-width: 100%
+  padding: 30px 50px
+  border-radius: 5px
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2)
+  text-align: center
+
+
+.Titulo_Modal
+  margin: 0
+  font-family: $titulos
+
+
+.modal p 
+  opacity: 0.7
+  font-size: 14px
+//tabla
+.Table
+    border: 3px groove gray
+.Table tr th
+    border: 2px ridge black
+.TITULOS_TABLA
+    background-color: #f02626
+    font-family: $titulos_Tabla
+    font-size: 2rem
+.Descripcion_tabla
+    background-color: blue
+    font-family: $Descripcion_Tabla
+    font-size: 1.35rem
+    color: white
+
+@media screen and (max-width:480px)
+    .Foda 
+        height: 100%
+        flex-direction: column
+    .foda_container
+        flex-direction: column
+

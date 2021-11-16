@@ -22,18 +22,8 @@ hr {
 }
 
 @font-face {
-  src: url("../Assets/Fonts/power_rangers/Power_Rangers.ttf");
-  font-family: 'Power-Ranges';
-}
-
-@font-face {
-  src: url("../Assets/Fonts/ac_ab/AC_AB.ttf");
-  font-family: 'AC_BC';
-}
-
-@font-face {
-  src: url("../Assets/Fonts/pamela/pamela.ttf");
-  font-family: 'Pamela';
+  src: url("../Assets/Fonts/rocket_wildness/rocket_wildness.ttf");
+  font-family: 'Rocket_wildness';
 }
 
 @font-face {
@@ -44,6 +34,21 @@ hr {
 @font-face {
   src: url("../Assets/Fonts/veteran_typewriter/veteran_typewriter.ttf");
   font-family: 'veteran_typewriter';
+}
+
+@font-face {
+  src: url("../Assets/Fonts/santanelli/santanelli.otf");
+  font-family: 'santanelli';
+}
+
+@font-face {
+  src: url("../Assets/Fonts/xelita/Xelita.ttf");
+  font-family: 'Xelita';
+}
+
+@font-face {
+  src: url("../Assets/Fonts/capsuula/Capsuula.ttf");
+  font-family: 'Capsuula';
 }
 
 .Caratula {
@@ -69,10 +74,10 @@ hr {
 
 .Titulo {
   text-decoration: none;
-  line-height: 10rem;
+  line-height: 9rem;
   -webkit-text-stroke: 2px black;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 60px;
+  font-size: 3rem;
   color: white;
   text-align: center;
 }
@@ -80,7 +85,7 @@ hr {
 @media screen and (max-width: 480px) {
   .Titulo {
     line-height: 7rem;
-    font-size: 40px;
+    font-size: 2rem;
   }
 }
 
@@ -104,7 +109,7 @@ hr {
 .list-item {
   display: block;
   margin-bottom: 20px;
-  font-size: 40px;
+  font-size: 2rem;
   color: white;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   -webkit-text-stroke: 1px black;
@@ -144,7 +149,7 @@ hr {
 .card {
   background-color: rgba(255, 255, 255, 0.9);
   width: 40vw;
-  height: 530px;
+  height: 28rem;
   margin-left: 5vw;
   margin-right: 5vw;
   border: 5px outset black;
@@ -161,21 +166,22 @@ hr {
 
 .card_header {
   text-align: center;
-  font-family: "Power-Ranges", Arial;
+  font-family: "veteran_typewriter", Arial;
   color: #d91115;
-  font-size: 50px;
+  font-size: 3rem;
   border-bottom: 3px dashed black;
 }
 
 .card_body {
-  padding: 20px;
+  padding: 5px 20px 20px 20px;
 }
 
 .card_description {
   text-align: center;
-  font-family: "AC_BC", Arial;
-  font-size: 28px;
+  font-family: "Rocket_wildness", Arial;
+  font-size: 1.1rem;
   text-align: justify;
+  color: black;
 }
 
 .card:hover {
@@ -200,7 +206,7 @@ hr {
     font-size: 20px;
   }
   .card_description {
-    font-size: 15px;
+    font-size: 0.75rem;
   }
 }
 
@@ -214,13 +220,16 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: end;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding-right: 50px;
 }
 
@@ -232,7 +241,7 @@ hr {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  font-family: "Power-Ranges", Arial;
+  font-family: "veteran_typewriter", Arial;
   font-size: 60px;
   color: gray;
   text-align: center;
@@ -240,14 +249,14 @@ hr {
 
 .Descripcion_Credo {
   color: white;
-  font-family: "Pamela", "Arial";
-  font-size: 40px;
-  text-align: center;
+  font-family: "santanelli", "Arial";
+  font-size: 1.5rem;
+  text-align: justify;
 }
 
 @media screen and (max-width: 480px) {
   .credo {
-    background-position: left;
+    background-image: url("../Assets/img/jesus.jpg");
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -257,9 +266,10 @@ hr {
     width: 100vw;
   }
   .Descripcion_Credo {
-    font-size: 25px;
-    color: white;
-    -webkit-text-stroke: 1px none;
+    padding: 20px;
+    font-size: 1.40rem;
+    color: black;
+    -webkit-text-stroke: 1px white;
   }
 }
 
@@ -286,6 +296,9 @@ hr {
   padding: 20px;
   width: 45vw;
   text-align: center;
+}
+
+.TitutloDescipcion {
   font-family: 'veteran_typewriter';
   font-size: 35px;
 }
@@ -294,5 +307,281 @@ hr {
   font-size: 25px;
   color: black;
   font-family: 'typewiter';
+}
+
+@media screen and (max-width: 480px) {
+  .Principio_Fundamento {
+    background-position: center;
+  }
+  .Principio_Fundamento_Container {
+    width: 100vW;
+  }
+  .Descripcion {
+    font-size: 20px;
+  }
+}
+
+.Foda {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #eeedeb;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.foda_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.Letter-container {
+  margin: 2rem;
+  overflow-x: hidden;
+}
+
+.img-Letra {
+  height: 17rem;
+  width: 15rem;
+}
+
+.img-Letra:active {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+
+button {
+  margin: 20px;
+  background-color: #6e0505;
+  border: 0;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 25px;
+}
+
+.modal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease;
+}
+
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal {
+  background-color: #fff;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.Titulo_Modal {
+  margin: 0;
+  font-family: "veteran_typewriter", Arial;
+}
+
+.modal p {
+  opacity: 0.7;
+  font-size: 14px;
+}
+
+.Table {
+  border: 3px groove gray;
+}
+
+.Table tr th {
+  border: 2px ridge black;
+}
+
+.TITULOS_TABLA {
+  background-color: #f02626;
+  font-family: "Xelita", "Arial";
+  font-size: 2rem;
+}
+
+.Descripcion_tabla {
+  background-color: blue;
+  font-family: "Capsuula", "Arial";
+  font-size: 1.35rem;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .Foda {
+    height: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .foda_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.Ejes {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../Assets/img/JHS.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Ejes_Container {
+  padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display-flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Eje {
+  background-color: rgba(255, 255, 255, 0.8);
+  margin-top: 1rem;
+  border: 5px dashed black;
+  border-radius: 20px;
+  height: 100%;
+  margin: 1.5rem;
+  width: 30vw;
+}
+
+.Titulo_eje {
+  background-color: Red;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  -webkit-text-stroke: 1px black;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  text-align: center;
+}
+
+.Descripcion-eje {
+  font-family: "Capsuula", "Arial";
+}
+
+@media screen and (max-width: 480px) {
+  .Ejes {
+    height: 100%;
+  }
+  .Ejes_Container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0;
+  }
+  .Eje {
+    margin: 0;
+    margin-top: 3rem;
+    width: 100vw;
+  }
+}
+
+.Formato_De_Vida {
+  background-image: url("../Assets/img/Espacio.gif");
+  background-position: center;
+  height: 100%;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.Table_life_Format {
+  border: 3px dashed white;
+  margin-bottom: 5rem;
+}
+
+.Description_table {
+  border: 4px dotted gray;
+  color: white;
+  background-color: rgba(0, 0, 255, 0.5);
+  font-family: "Capsuula", "Arial";
+  padding: 15px;
+}
+
+.Title_table {
+  border: 4px double gray;
+  color: white;
+  font-family: "Xelita", "Arial";
+}
+
+@media screen and (max-width: 480px) {
+  .Table_life_Format {
+    display: block;
+    overflow-x: auto;
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=index.css.map */

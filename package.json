@@ -18,11 +18,13 @@
   },
   "homepage": "https://github.com/pcpisquiy/PlanDeVida_PCPP#readme",
   "devDependencies": {
+    "jquery": "^3.6.0",
     "lite-server": "^2.6.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
     "animate.css": "^4.1.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "scrollreveal": "^4.0.9"
   }
 }
