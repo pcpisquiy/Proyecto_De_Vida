@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css" />
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
     <title>Plan de vida| Pablo César Pisquiy Pacajá</title>
 </head>
 
@@ -19,6 +20,11 @@
             <h1 class="Titulo">Plan De Vida <br> Pablo César Pisquiy Pacajá - 1168921 <br> Magis Ladivariano
                 <br>Sección: 20</h1>
         </section>
+        <div class="arrow" id="arrow">
+            <a href="#Menu">
+                <i class="fas fa-arrow-down arrow__color"></i>
+            </a>
+        </div>
     </div>
 
 
@@ -43,21 +49,18 @@
             <a href="#Formato_De_Vida">
                 <li class="list-item animate__animated animate__bounce animate__infinite">Formato de vida</li>
             </a>
-            <a href="#Reflexion">
+            <a href="#Reflection">
                 <li class="list-item animate__animated animate__bounce animate__infinite">Reflexion</li>
             </a>
-            <a href="#Anexos">
+            <a href="#anexos">
                 <li class="list-item animate__animated animate__bounce animate__infinite">Anexos</li>
             </a>
             <a href="#Rubricas">
-                <li class="list-item animate__animated animate__bounce animate__infinite">Rubricas de evaluacion</li>
-            </a>
-            <a href="#Auto-Evaluacion">
-                <li class="list-item animate__animated animate__bounce animate__infinite">Auto evaluacion</li>
+                <li class="list-item animate__animated animate__bounce animate__infinite">Rubricas de evaluación y autoevaluacón</li>
             </a>
         </ol>
     </div>
-    <div id="Mision" class="Mision">
+    <div id="Mision" class="Mision" data-aos="fade-up">
         <marquee behavior="alternate" truespeed="70" class="Titulo">Misión y Visión</marquee>
         <div class="card_container">
             <div class="card">
@@ -87,8 +90,9 @@
                 </div>
             </div>
         </div>
+        
     </div>
-    <div class="credo" id="Credo">
+    <div class="credo" id="Credo"  data-aos="fade-right">
         <div class="Credo_Container">
             <div class="Titulo_Credo">
                 <h2>Mi Credo <i class="fas fa-cross"></i></h2>
@@ -105,7 +109,7 @@
             </div>
         </div>
     </div>
-    <div class="Principio_Fundamento" id="Principio_y_Fundamento">
+    <div class="Principio_Fundamento" id="Principio_y_Fundamento" data-aos="fade-left">
         <div class="Principio_Fundamento_Container">
             <h1 class="TitutloDescipcion">Principio y Fundamento</h1>
             <p class="Descripcion">Mis principios están basados en la religión católica cristiana más en especifico en
@@ -117,20 +121,20 @@
                 correcto con mi vida y con el prójimo.</p>
         </div>
     </div>
-    <div class="Foda" id="foda">
+    <div class="Foda" id="foda" data-aos="fade-up-right">
         <div class="foda_container">
-            <div class="Letter-container" id="F">
+            <div class="Letter-container animate__animated animate__headShake animate__infinite" id="F">
                 <img src="./Assets/img/F.png" class="img-Letra" alt="">
             </div>
-            <div class="Letter-container" id="O">
+            <div class="Letter-container animate__animated animate__rubberBand animate__infinite" id="O">
                 <img src="./Assets/img/O.png" class="img-Letra" alt="">
             </div>
         </div>
         <div class="foda_container">
-            <div class="Letter-container" id="D">
+            <div class="Letter-container animate__animated animate__jello animate__infinite" id="D">
                 <img src="./Assets/img/D.png" class="img-Letra" alt="">
             </div>
-            <div class="Letter-container" id="A">
+            <div class="Letter-container animate__animated animate__heartBeat animate__infinite" id="A">
                 <img src="./Assets/img/A.png" class="img-Letra" alt="">
             </div>
         </div>
@@ -144,7 +148,7 @@
             <button id="close">Cerrar</button>
         </div>
     </div>
-    <div class="Ejes" id="EjesIgnacianos">
+    <div class="Ejes" id="EjesIgnacianos" data-aos="flip-left">
         <h1 class="Titulo">Ejes ingancianos</h1>
         <div class="Ejes_Container">
             <div class="Eje" id="Dicernimiento">
@@ -159,7 +163,7 @@
                                     Este lo aplico en mi vida tratando de ayudar más a las personas que más lo necesitan y no solo en el sentido económico si también a las tareas del área de programación ya que es el ámbito donde me desarrollo mejor así como también los ayudo dándole palabras de aliento en los problemas que la gente que me tiene confianza me cuenta. El magis ignaciano lo aplique en este año ayudando a mi hermana en sus tareas de matemática ya que ella le costaba al inicio que con mi ayuda y su esfuerzo logro salir adelante en el curso y como recompensa dios envio a alguien para que me ayudara también el los cursos que son mi debilidad.
                 </section>
             </div>
-            <div class="Eje" id="liderazgo">
+            <div class="Eje" id="liderazgo"  >
                 <h1 class="Titulo_eje">El liderazgo Ignaciano</h1>
                 <section class="Descripcion-eje">
                     Este lo aplico tratando de cada día ser mejor al anterior ya que al conocer mis debilidades y fortalezas trabajo para lo que se que es una debilidad se vuelva una fortaleza así como también siempre analizo mi vida para ver que aspectos tengo que mejorar y como es mi progreso en los que estoy en proceso de mejor.
@@ -169,7 +173,7 @@
 
         </div>
     </div>
-    <div class="Formato_De_Vida" id="Formato_De_Vida">
+    <div class="Formato_De_Vida" id="Formato_De_Vida" data-aos="flip-up">
         <h1 class="Titulo">FORMATO DE VIDA</h1>
         <table class="Table_life_Format">
             <tr >
@@ -200,10 +204,10 @@
             </tr>
             <tr>
                 <td class="Description_table">Hacer más ejercicio</td>
-                <td class="Description_table">ssss</td>
-                <td class="Description_table">ssss</td>
-                <td class="Description_table">ssss</td>
-                <td class="Description_table">ssss</td>
+                <td class="Description_table">Hacer minimo una hora de ejercicio hit</td>
+                <td class="Description_table">Youtube e instrumentos de ejercicio en casa (Cuerda de saltay y  mancuernas de 10 libras)</td>
+                <td class="Description_table">1 Hora</td>
+                <td class="Description_table">Aplicacion Adidas traning y relój</td>
             </tr>
             <tr >
                 <th colspan="5" class="Title_table">Familia</th>
@@ -307,8 +311,73 @@
             </tr>
         </table>
     </div>
+    <div class="Reflexion" id="Reflection" data-aos="fade-up-left">
+        <h1 class="Titulo">Reflexion</h1>
+<p class="descripcion_Reflexion">
+    Como reflexion tengo que uno nunca debe de esperar para hacer este tipo de trabajo para poder empezar a conocerse más a fondo ya que en lo personal no que conocia al 100%. <br> Este proyecto me ayudo a reflexionar que aspectos de mi vidad debo cambiar ya que me di cuenta que muchos aspectos de mi vida son los que me tienen en declive y como meta tengo mejorar mis habitos en todos los aspectos ya que el unico beneficiado soy yo.
+</p>
+    </div>
+<div class="anexos" id="anexos" data-aos="zoom-out-left">
+    <div class="anexos_container">
+        <div class="image"><h1 class="">Segundo lugar Torneo de karate en xela</h1><img class="Img_Anexos" src="./Assets/img/Karate.JPG" alt=""></div>
+        <div class="image"> <h1 class="">Medalla a la perceverancia por graduarme del colegio iea y haber cursado desde preprimaria hasta bachillerato</h1> <img class="Img_Anexos" src="./Assets/img/Medalla.jpg" alt=""></div>
+            <div class="image"><h1 class="">Inicie mi emprendimiento el año pasado en conjunto con mi socio Alejandro Vazques</h1> <img class="Img_Anexos" src="./Assets/img/solsis.png" alt=""></div>
+    </div>
+</div>
+<div class="Rubricas" id="Rubricas" data-aos="zoom-in">
+    <h1 class="Titulo">Rubricas de evaluación y autoevaluacion</h1>
+    <img src="./Assets/img/Rubrica.png" alt="">
+    <div class="autoevaluacion">
+            <table class="Table_life_Format">
+                <tr >
+                    <th colspan="3" class="Title_table">Autoevaluación</th>
+                </tr>
+                <tr>
+                    <th class="Title_table">No.</th>
+                    <th class="Title_table">Aspecto</th>
+                    <th class="Title_table">Punteo</th>
+                </tr>
+                <tr>
+    
+                    <td class="Description_table">1.</td>
+                    <td class="Description_table">Presto atención a las instrucciones durante la clase.</td>
+                    <td class="Description_table">25/25%</td>
+                </tr>
+                <tr>
+    
+                    <td class="Description_table">2.</td>
+                    <td class="Description_table">Aprovecho el tiempo de clase para aclarar dudas.</td>
+                    <td class="Description_table">25/25%</td>
+                </tr>
+                <tr>
+                    <td class="Description_table">3.</td>
+                    <td class="Description_table">He logrado vivenciar los temas estudiados en clase. </td>
+                    <td class="Description_table">25/25%</td>
+                </tr>
+                <tr>
+                    <td class="Description_table">4.</td>
+                    <td class="Description_table">Trabajo con una actitud positiva en clase. </td>
+                    <td class="Description_table">25/25%</td>
+                </tr>
+                <tr>
+    
+                    <td class="Description_table"></td>
+                    <td class="Description_table">TOTAL</td>
+                    <td class="Description_table">100/100%</td>
+                    
+                </tr>
+                </table>
+    </div>
+</div>
+<footer class="Footer">
+    <p> Todos los derechos reservados a <span> <a href="http://solsis.ga/?i=1" target="_blank"><img height="50px" src="./Assets/img/solsis.png" ></a></span>oluciones con sistemas</p>
+</footer>
     <script src="./js/Scroll/dist/vanillajs-scrollspy.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>

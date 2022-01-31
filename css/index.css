@@ -82,10 +82,81 @@ hr {
   text-align: center;
 }
 
+.arrow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+  margin-bottom: 80px;
+  -webkit-animation: arrow__move 3s infinite;
+          animation: arrow__move 3s infinite;
+}
+
+.arrow__color {
+  font-size: 800%;
+  font-size-color: rgba(255, 255, 255, 0.5);
+}
+
 @media screen and (max-width: 480px) {
   .Titulo {
     line-height: 7rem;
     font-size: 2rem;
+  }
+  .arrow {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+}
+
+@-webkit-keyframes arrow__move {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes arrow__move {
+  0% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  50% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
 
@@ -120,6 +191,9 @@ hr {
 }
 
 @media screen and (max-width: 480px) {
+  .Menu {
+    height: 100%;
+  }
   .list-item {
     font-size: 35px;
     margin-bottom: 25px;
@@ -129,7 +203,7 @@ hr {
 .Mision {
   width: 100vw;
   height: 100vh;
-  background-image: url("../Assets/img/Termosfera2.jpg");
+  background-image: url("../Assets/img/Termosfera.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -190,6 +264,9 @@ hr {
 }
 
 @media screen and (max-width: 480px) {
+  .Mision {
+    height: 100%;
+  }
   .card_container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -261,6 +338,7 @@ hr {
         -ms-flex-align: center;
             align-items: center;
     padding-right: 0;
+    height: 100%;
   }
   .Credo_Container {
     width: 100vw;
@@ -312,6 +390,7 @@ hr {
 @media screen and (max-width: 480px) {
   .Principio_Fundamento {
     background-position: center;
+    height: 100%;
   }
   .Principio_Fundamento_Container {
     width: 100vW;
@@ -582,6 +661,139 @@ button {
     display: block;
     overflow-x: auto;
     width: 100%;
+  }
+}
+
+.Reflexion {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../Assets/img/Reflexion.jpg");
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.descripcion_Reflexion {
+  padding: 3rem;
+  font-family: "Capsuula", "Arial";
+  color: black;
+  -webkit-text-stroke: 1px white;
+  font-size: 2.5rem;
+  text-align: justify;
+}
+
+@media screen and (max-width: 480px) {
+  .descripcion_Reflexion {
+    padding: 1.50rem;
+    font-size: 2rem;
+  }
+}
+
+.Rubricas {
+  height: 100%;
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 3rem;
+  background-image: radial-gradient(circle, red, blue);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.autoevaluacion {
+  margin: 2rem;
+}
+
+.Footer {
+  width: 100vw;
+  border-top: 2px solid black;
+  background-color: #004a9e;
+  background-color-padding: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Footer p {
+  font-size: 2rem;
+  font-family: "Capsuula", "Arial";
+}
+
+.anexos {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../Assets/img/Xela.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.anexos_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Img_Anexos {
+  max-width: 20vw;
+  margin: 5rem;
+}
+
+.image h1 {
+  font-family: "veteran_typewriter", Arial;
+  color: white;
+}
+
+@media screen and (max-width: 480px) {
+  .image h1 {
+    font-size: 1rem;
+  }
+  .Img_Anexos {
+    margin: 1rem;
+  }
+  .anexos_container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=index.css.map */

@@ -10,6 +10,7 @@ hr
     background-color: red
     align-self: center
     justify-self: center
+ 
 @import _Fuentes.sass
 @import _Variables.sass
 @import _Caratula.sass
@@ -20,3 +21,37 @@ hr
 @import _Foda.sass
 @import _EjesIgnacianos.sass
 @import _Formato_Vida.sass
+@import _Reflexion.sass
+@import _Rubricas.sass
+@import _Footer.sass
+.anexos
+    width: 100vw
+    height: 100vh
+    background-image: url('../Assets/img/Xela.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    display: flex
+    align-items: center
+    justify-items: center
+    justify-content: center
+.anexos_container
+    display: flex
+    align-items: center
+    justify-items: center
+    justify-content: center
+.Img_Anexos
+    max-width: 20vw
+    margin: 5rem
+.image
+    h1
+        font-family: $titulos
+        color: white
+@media screen  and (max-width:480px)
+    .image
+        h1
+            font-size: 1rem
+    .Img_Anexos
+        margin: 1rem
+    .anexos_container
+        flex-direction: column

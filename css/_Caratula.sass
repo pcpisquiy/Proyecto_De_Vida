@@ -17,8 +17,38 @@
     font-size: 3rem
     color: white
     text-align: center
+.arrow
+	display: flex
+	position: absolute
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	justify-content: center
+	align-items: end
+	margin-bottom: 80px 
+	animation: arrow__move 3s infinite 
+.arrow__color
+	font-size: 800%
+    color: rgba(white,0.5)
 @media screen  and (max-width:480px) 
     .Titulo
         line-height: 7rem
         font-size: 2rem
-        
+    .arrow
+        position: absolute
+        display: flex
+        justify-content: center
+        align-items: flex-end
+        top: 0
+        bottom: 0
+        left: 0
+        right: 0
+@keyframes arrow__move
+	0%
+		transform: translateY(0)
+	50% 
+		transform: translateY(-20%)
+
+	100%
+		transform: translateY(0)
